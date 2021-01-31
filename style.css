@@ -1,0 +1,12 @@
+body{
+    padding:100px;
+    }
+    .input-area{
+        width: 700px;
+        background-color: blue;
+        padding: 50px;
+        color: white;
+    }
+    .transection{
+        display:none;
+    }

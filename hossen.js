@@ -24,7 +24,6 @@ widrowBtn.addEventListener("click",function(){
   document.getElementById("widhrow").value = "";
 })
 
-
  function updateValue (id){
   const widhrowAmount = document.getElementById(id).value;
   const widhrowNewNamber = parseFloat(widhrowAmount);
@@ -36,4 +35,12 @@ function getSpanText (id,depositAmount){
   const currentAmount = parseFloat(currentDeposit);
   const total = depositAmount + currentAmount;
   document.getElementById(id).innerText = total;
-}
+};
+
+//Wellcome text
+const wellcomeText = document.getElementById("sub");
+wellcomeText.addEventListener("click",function(){
+  const nameText = document.getElementById("my-name").value;
+  document.getElementById("wellcome-text").innerText = nameText ;
+  document.getElementById("my-name").value = "";
+})
